@@ -447,6 +447,25 @@ body::after{
   }
 }*/
 
+.container {
+  width: 80%; /* Default width for desktop */
+  margin: 0 auto;
+}
 
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .container {
+      width: 95%; /* Make containers wider on mobile screens */
+  }
+
+  .nav {
+      display: block; /* Change navigation layout on mobile */
+      text-align: center;
+  }
+
+  .header {
+      font-size: 18px; /* Adjust header font size on smaller screens */
+  }
+}
 
 
