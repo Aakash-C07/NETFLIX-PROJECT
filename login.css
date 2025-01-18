@@ -231,3 +231,31 @@ input:hover{
   0 0 30px #000000;
 }
 
+
+/* Login form styles */
+.login-form {
+  width: 40%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .login-form {
+      width: 80%; /* Increase form width on mobile */
+      padding: 15px;
+  }
+
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+      width: 100%; /* Make input fields full width on mobile */
+      padding: 10px;
+  }
+
+  .login-form button {
+      width: 100%; /* Make button full width on mobile */
+  }
+}
