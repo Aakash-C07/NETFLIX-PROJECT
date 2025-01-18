@@ -141,3 +141,76 @@
       z-index: -1; /* Ensure it's above the image */
       pointer-events: none; /* Make it non-interactive */
   }
+
+
+
+
+
+
+ /* General styles for all pages */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Header and navigation styles */
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.netflixfontimg {
+  width: 200px;
+}
+
+iframe {
+  width: 100%;
+  height: 500px;
+}
+
+.video {
+  margin: 20px;
+}
+
+/* Media query for mobile devices (screens smaller than 768px) */
+@media (max-width: 768px) {
+  .header nav {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .netflixfontimg {
+      width: 150px;
+      margin-left: 0;
+  }
+
+  iframe {
+      width: 100%;
+      height: auto;
+  }
+
+  .video {
+      margin: 10px 0;
+  }
+
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav ul li {
+      padding: 5px;
+  }
+
+  body::before {
+      filter: blur(2px);
+  }
+}
